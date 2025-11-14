@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header1">
+    <nav class="nav1">
+      <a href="index.html">Gallery 1</a>
+      <a href="gallery2.html">Gallery 2</a>
+    </nav>
+
+    <nav class="nav2">
+      <a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/tina1113tin/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </nav>
+  </header>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="about">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Please reach out via email or follow us on social media.</p>
+
+    <form action="mailto:your@email.com" method="post" enctype="text/plain" style="margin-top:30px;">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; max-width:400px; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%; max-width:400px; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;">
+      <textarea name="message" placeholder="Your Message" required style="width:100%; max-width:400px; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; height:150px;"></textarea>
+      <br>
+      <button type="submit" style="padding:12px 25px; border:none; border-radius:6px; background:#3c3c3c; color:#fff; font-family:'Inter', sans-serif; cursor:pointer; transition:opacity 0.3s;">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <!-- ===== Sticky Header Scroll JS ===== -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.header1');
+      if (window.scrollY > 20) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+
+</body>
+</html>
