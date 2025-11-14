@@ -224,34 +224,14 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive tweaks */
-@media (max-width: 900px) {
-  .header1 {
-    flex-direction: column;
-    gap: 25px;
-    padding: 40px 20px;
-  }
-  
-  .nav1 a,
-  .nav2 a {
-    margin: 0 10px;
-  }
-}
+/* ===== Responsive Design ===== */
 
-@media (max-width: 600px) {
-  .nav1 a,
-  .nav2 a {
-    display: block;
-    margin: 8px 0;
-  }
-}
-/* ===== Responsive Header for .header1 ===== */
-
-@media (max-width: 900px) {
+/* Tablets / Medium Screens */
+@media (max-width: 1024px) {
   .header1 {
     flex-direction: column;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 30px 40px;
   }
 
   .nav1 a,
@@ -259,55 +239,80 @@
     margin: 0 12px;
     font-size: 0.95rem;
   }
+
+  section.gallery,
+  section.gallery2,
+  section.gallery3,
+  section.gallery4,
+  section.gallery5,
+  section.gallery6,
+  section.gallery7,
+  section.gallery8,
+  section.gallery9,
+  section.gallery10,
+  section.gallery11 {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 2%;
+    justify-content: center;
+  }
+
+  .frame {
+    width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
-@media (max-width: 600px) {
+/* Mobile / Small Screens */
+@media (max-width: 768px) {
+  header {
+    font-size: 2em;
+    padding: 60px 15px 40px;
+  }
+
   .header1 {
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    padding: 20px 15px;
+    gap: 15px;
   }
 
   .nav1,
   .nav2 {
-    display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
   }
 
   .nav1 a,
   .nav2 a {
     margin: 5px 0;
+    font-size: 0.95rem;
+  }
+
+  .frame {
+    width: 80%;
+  }
+
+  section.about {
     font-size: 1rem;
+    padding: 40px 15px 80px;
   }
 }
 
-
-
-
-    /* Responsive Design */
-@media (max-width: 768px) {
-header {
-font-size: 2.2em;
-padding: 70px 10px 30px;
-}
-.art {
-width: 85%;
-max-width: none;
-}
-section.about {
-font-size: 1em;
-padding: 40px 15px;
-}
-}
-
+/* Extra Small Screens / Phones */
 @media (max-width: 480px) {
-.art {
-width: 90%;
-}
-header {
-font-size: 1.8em;
-}
+  header {
+    font-size: 1.8em;
+    padding: 50px 10px 30px;
+  }
+
+  .frame {
+    width: 95%;
+  }
+
+  .caption {
+    font-size: 1rem;
+    padding: 12px 18px 20px;
+  }
 }
 
 
